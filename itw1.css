@@ -1,0 +1,410 @@
+﻿/*
+    Reset all paddings and margins
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    Media queries
+ */
+
+@media screen and (max-width: 700px) {
+    #main .lead {
+         padding: 0 50px;
+     }
+
+    .agenda-part {
+        flex-basis: 70% !important;
+    }
+
+    .main-title .content {
+        padding-top: 20px !important;
+    }
+
+    .pricing-table-default {
+        flex-basis: 60% !important;
+    }
+
+    h1 {
+         padding: 0 65px;
+     }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .agenda-part {
+        flex-basis: 45% !important;
+    }
+
+    .pricing-table-default {
+        flex-basis: 40% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #section-intro .lead {
+        padding-bottom: 0 !important;
+    }
+
+    .contact {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+    #main .lead {
+        padding: 0 70px;
+    }
+
+    h1 {
+         padding: 0 75px;
+     }
+}
+
+@media screen and (max-width: 1250px) {
+    .logo {
+        padding-left: 20px;
+    }
+
+    .main-menu{
+        padding-right: 20px;
+    }
+}
+
+/*
+    ID style definitions
+ */
+
+#main {
+    background-image: url(img/img-jumbotron-bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 15px;
+}
+
+#section-agenda .content {
+    display: flex;
+    flex: 1 !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#section-agenda .content, #section-partner .content {
+    padding-bottom: 120px;
+}
+
+#section-agenda .section-title, #section-partner .section-title, #section-pricing .section-title {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#section-agenda h2, #section-partner h2, #section-speaker h2 {
+    margin-bottom: 25px;
+}
+
+#section-intro {
+    background-color: white;
+    height: 250px;
+    width: 100%;
+}
+
+#section-intro .contact {
+    color: #383e54;
+    font-size: 15px;
+    max-width: 25%;
+}
+
+#section-intro .contact, #section-intro .lead {
+    float: left;
+    line-height: 25px;
+    max-width: 750px;
+}
+
+#section-intro .contact address {
+    color: #858585;
+    font-size: 15px;
+    font-style: normal;
+}
+
+#section-intro .contact address strong {
+    color: #353d54;
+}
+
+#section-intro .content {
+    padding-bottom: 75px !important;
+    padding-top: 75px !important;
+}
+
+#section-intro .lead {
+    padding-bottom: 75px;
+}
+
+#section-intro .lead p {
+    color: #383e54;
+    font-size: 19px;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+
+#section-partner .content, #section-pricing .content, .section-content {
+    align-items: center;
+    display: flex;
+    flex: 1 !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#section-pricing, #section-speaker {
+    background-color: #f0f1f3;
+}
+
+#section-pricing .content {
+    padding-bottom: 60px;
+}
+
+#section-pricing p {
+    color: #898989;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+#section-speaker {
+    clear: both;
+    padding-bottom: 125px;
+    width: 100%;
+}
+
+/*
+    Class style definitions
+ */
+
+.agenda-part {
+    align-items: stretch;
+    color: #091061;
+    flex-basis: 33%;
+}
+
+.agenda-part time {
+    color: #3c435d;
+}
+
+.contact {
+    margin-left: 50px;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.event-date {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    float: left;
+    margin-top: 40px;
+}
+
+.main-title {
+    clear: both;
+    color: white;
+}
+
+.main-title .btn {
+    border: 1px white solid;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.main-title .btn:hover {
+    border: 1px #fd367e solid;
+    color: #fd367e;
+}
+
+.main-title .content {
+    margin-bottom: 100px !important;
+    max-width: 900px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.main-title .lead {
+    color: #c7cacf;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 70px;
+}
+
+.pricing-detail {
+    color: #343956;
+    line-height: 50px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pricing-head h3 {
+    background-color: #0d1554;
+    color: white;
+    flex: 1;
+    margin-bottom: 45px;
+    padding: 15px 50px;
+    text-transform: uppercase;
+}
+
+.pricing-head span {
+    color: #343956;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.pricing-head sup {
+    font-size: 20px;
+}
+
+.pricing-table-default {
+    background-color: white;
+    flex-basis: 30%;
+    margin: 15px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.pricing-table-default .btn {
+    background-color: #fe367e;
+    border: 2px #fe367e solid;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.pricing-table-default .btn:hover {
+    background-color: white;
+    color: #fe367e;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.section-content figure {
+    padding: 25px 11px 25px 11px;
+}
+
+.session {
+    border-left: 2px #ececec solid;
+    line-height: 40px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-top: 20px;
+}
+
+.session h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.session h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.session span {
+    display: block;
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.session time {
+    border-bottom: 2px #ececec solid;
+    padding: 20px;
+}
+
+.thumbnail {
+    flex-basis: 22%;
+}
+
+.thumbnail h3 {
+    color: #10154f;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.thumbnail h3 small {
+    color: #898989;
+    display: block;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+/*
+    Element style definitions
+ */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    color: #898989;
+    font-size: 14px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+footer a {
+    color: #fd367e;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav.main-menu{
+    float: right;
+    padding-top: 50px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    margin: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fd367e;
+}
+
+section h2 {
+    color: #0d1554;
+    font-size: 36px;
+    padding-top: 75px;
+    text-align: center;
+    text-transform: uppercase;
+}
